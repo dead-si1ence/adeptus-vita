@@ -1,0 +1,24 @@
+- Choose any imbalanced dataset --DONE
+
+- Apply any needed preprocessing 
+    1. openCV
+    2. numpy
+    3. matplotlib
+
+- Apply Resampling on this dataset (both undersampling then oversampling ) --DONE
+
+- Choose Two Ensemble models ( one Bagging and one boosting ) --DONE
+
+- Train each model on the processed data --DONE
+
+- Calculate Accuracy, Precision, Recall, f1-score and AUC for each model --DONE
+
+- Optimize the two models by choose different parameters to get better results --DONE
+
+- Calculate Accuracy, Precision, Recall, f1-score and AUC for each model for the optimized models
+
+- Submit The Code (.py or .ipynb)
+
+- Work on Groups (Only Two or three is allowed for each group, don't work alone)
+
+- Their will be a discussion for your code

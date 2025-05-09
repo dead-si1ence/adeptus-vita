@@ -1,2 +1,1 @@
 # adeptus-vita
-# adeptus-vita
