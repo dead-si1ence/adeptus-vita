@@ -1,4 +1,21 @@
-# Adeptus Vita
+# <div align="center">Adeptus Vita</div>
+
+<div align="center">
+  <img src="dataset/AlzheimerDataset/NonDemented/0a1a69f6-c162-4802-a42c-4df51e50edf6.jpg" alt="Adeptus Vita Logo" width="200px"/>
+  <br>
+  <strong>AI-powered Alzheimer's and Dementia Diagnosis Platform</strong>
+  <br><br>
+  
+  ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
+  ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+  ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+  ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+  ![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+</div>
+
+<br>
 
 Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and dementia using MRI scans. The application provides a modern, responsive interface for uploading and analyzing brain scans, viewing diagnostic results, and accessing educational resources.
 
@@ -44,13 +61,36 @@ Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and deme
 
 ## Pages
 
-- **Home**: Landing page with overview of the platform's capabilities
-- **Diagnostic Model**: Upload and analyze MRI scans
-- **Blog**: Educational articles and research updates
-- **Search**: Search functionality across the application
-- **Settings**: User account and application preferences
-- **Notifications**: System and diagnostic notifications
-- **About**: Information about the platform and team
+<div>
+  <div>
+    <h3>Home</h3>
+    <p>Landing page with overview of the platform's capabilities</p>
+  </div>
+  <div>
+    <h3>Diagnostic Model</h3>
+    <p>Upload and analyze MRI scans</p>
+  </div>
+  <div>
+    <h3>Blog</h3>
+    <p>Educational articles and research updates</p>
+  </div>
+  <div>
+    <h3>Search</h3>
+    <p>Search functionality across the application</p>
+  </div>
+  <div>
+    <h3>Settings</h3>
+    <p>User account and application preferences</p>
+  </div>
+  <div>
+    <h3>Notifications</h3>
+    <p>System and diagnostic notifications</p>
+  </div>
+  <div>
+    <h3>About</h3>
+    <p>Information about the platform and team</p>
+  </div>
+</div>
 
 ## Getting Started
 
@@ -72,9 +112,7 @@ Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and deme
 
    ```bash
    npm install
-
    # or
-
    yarn install
    ```
 
@@ -82,9 +120,7 @@ Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and deme
 
    ```bash
    npm run dev
-
    # or
-
    yarn dev
    ```
 
@@ -94,7 +130,7 @@ Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and deme
 
 ### Diagnostic Model
 
-1. Navigate to the Diagnostic Model page
+1. Navigate to the **Diagnostic Model** page
 2. Upload an MRI scan in JPG, PNG, or DICOM format
 3. Click "Analyze Scan" to process the image
 4. View the diagnostic results, including confidence level and recommendations
@@ -102,32 +138,32 @@ Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and deme
 
 ### Blog
 
-1. Browse articles on the Blog page
-2. Click on an article to read the full content
-3. Navigate between articles using the "Continue Reading" section
+- Browse articles on the **Blog** page
+- Click on an article to read the full content
+- Navigate between articles using the "Continue Reading" section
 
 ### Search
 
-1. Use the search bar in the header or the dedicated Search page
-2. Enter keywords related to diagnostics, research, or blog content
-3. Filter and sort results by type, date, or relevance
+- Use the search bar in the header or the dedicated **Search** page
+- Enter keywords related to diagnostics, research, or blog content
+- Filter and sort results by type, date, or relevance
 
 ### Settings
 
-1. Access the Settings page from the header menu
-2. Customize appearance preferences (theme, font size)
-3. Manage notification preferences
-4. Update account information and security settings
+- Access the **Settings** page from the header menu
+- Customize appearance preferences (theme, font size)
+- Manage notification preferences
+- Update account information and security settings
 
 ### Notifications
 
-1. View notifications by clicking the bell icon in the header
-2. Mark notifications as read or delete them
-3. Adjust notification preferences in the Settings page
+- View notifications by clicking the bell icon in the header
+- Mark notifications as read or delete them
+- Adjust notification preferences in the **Settings** page
 
 ## Project Structure
 
-```plaintext
+```
 adeptus-vita/
 ├── app/                  # Next.js App Router pages
 │   ├── about/            # About page
@@ -152,19 +188,25 @@ adeptus-vita/
 
 ### Themes
 
-The application supports light and dark modes, with a system preference option. Theme settings can be adjusted in the Settings page or via the theme toggle in the header.
+The application supports light and dark modes, with a system preference option. Theme settings can be adjusted in the **Settings** page or via the theme toggle in the header.
 
 ### UI Components
 
-UI components are built using the shadcn/ui library, which provides a consistent design system. Components can be customized by modifying the corresponding files in the `components/ui` directory.
+UI components are built using the [shadcn/ui](https://ui.shadcn.com/) library, which provides a consistent design system. Components can be customized by modifying the corresponding files in the `components/ui` directory.
 
 ### Styling
 
-Styling is implemented using Tailwind CSS. Global styles are defined in `app/globals.css`, and component-specific styles are applied using Tailwind utility classes.
+Styling is implemented using [Tailwind CSS](https://tailwindcss.com/). Global styles are defined in `app/globals.css`, and component-specific styles are applied using Tailwind utility classes.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
@@ -176,7 +218,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Model Overview
 
-The diagnostic model is an advanced Artificial Neural Network (ANN) designed to classify brain MRI images into three categories of Alzheimer's disease progression: Non-Demented, Mild Demented, and Moderate Demented. The model uses a hybrid approach combining transfer learning (with EfficientNetB0 for feature extraction) and an optimized ANN for classification.
+<div align="center">
+  <img src="https://camo.githubusercontent.com/d214a3ef6f724f75c5c54524062edeb635bc90409a35b766ae46bc0e3f0e788e/68747470733a2f2f692e737461636b2e696d6775722e636f6d2f5130784f652e706e67" alt="Neural Network Visualization" width="500px"/>
+</div>
+
+The diagnostic model is an advanced Artificial Neural Network (ANN) designed to classify brain MRI images into three categories of Alzheimer's disease progression: **Non-Demented**, **Mild Demented**, and **Moderate Demented**. The model uses a hybrid approach combining transfer learning (with EfficientNetB0 for feature extraction) and an optimized ANN for classification.
 
 ## Dataset
 
@@ -245,18 +291,20 @@ All images undergo a standardized preprocessing workflow:
 
 ### Optimization Framework
 
-- **Tool**: Optuna - a hyperparameter optimization framework
+- **Tool**: [Optuna](https://optuna.org/) - a hyperparameter optimization framework
 - **Objective**: Maximize validation accuracy
 - **Trials**: 15 optimization trials
 
 ### Hyperparameters Searched
 
-- **Activation Function**: ["relu", "sigmoid", "tanh"]
-- **Optimizer**: ["adam", "sgd", "rmsprop"]
-- **Learning Rate**: Range from 1e-5 to 1e-2 (log scale)
-- **Dropout Rate**: Range from 0.1 to 0.5
-- **Number of Layers**: 1 to 3 dense layers
-- **Units per Layer**: [64, 128, 256]
+| Parameter | Values/Range |
+|-----------|--------------|
+| Activation Function | relu, sigmoid, tanh |
+| Optimizer | adam, sgd, rmsprop |
+| Learning Rate | 1e-5 to 1e-2 (log scale) |
+| Dropout Rate | 0.1 to 0.5 |
+| Number of Layers | 1 to 3 dense layers |
+| Units per Layer | 64, 128, 256 |
 
 ### Final Model Architecture
 
@@ -289,6 +337,10 @@ The `MetricsReport` function provides comprehensive evaluation of the model's cl
 
 ## Inference Pipeline
 
+<!-- <div align="center">
+  <img src="https://miro.medium.com/max/1400/1*HmIFtdiNPa_BRVn5g7V8tw.png" alt="Inference Pipeline" width="700px"/>
+</div> -->
+
 The model includes a complete inference pipeline for classifying new MRI images:
 
 1. **Image Loading**: Loads a target image from a specified path
@@ -300,8 +352,6 @@ The model includes a complete inference pipeline for classifying new MRI images:
 The `PredictNewInstance` function encapsulates this entire workflow, making it easy to classify new, unseen images.
 
 ## Model Usage Example
-
-Here's how to use the model to predict the class of a new MRI image:
 
 ```python
 from tensorflow.keras.models import load_model
