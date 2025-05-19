@@ -44,7 +44,7 @@ Adeptus Vita is an AI-powered platform for the diagnosis of Alzheimer's and deme
 1. Clone the repository:
 
    ```bash
-   git clone <https://github.com/yourusername/adeptus-vita.git>
+   git clone https://github.com/dead-si1ence/adeptus-vita.git
    cd adeptus-vita
    ```
 
