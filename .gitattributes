@@ -1,2 +1,2 @@
-Data/fullDatasetFeatures.npy filter=lfs diff=lfs merge=lfs -text
-Models/optimizedRandomForest.pkl filter=lfs diff=lfs merge=lfs -text
+initial-project/Data/fullDatasetFeatures.npy filter=lfs diff=lfs merge=lfs -text
+initial-project/Models/optimizedRandomForest.pkl filter=lfs diff=lfs merge=lfs -text
