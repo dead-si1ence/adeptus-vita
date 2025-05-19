@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 235 12% 40%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 235 12% 40%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 235 12% 5%;
+    --foreground: 0 0% 93%;
+    --card: 235 12% 7%;
+    --card-foreground: 0 0% 93%;
+    --popover: 235 12% 5%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 235 6% 70%;
+    --primary-foreground: 235 12% 5%;
+    --secondary: 235 5% 12%;
+    --secondary-foreground: 0 0% 93%;
+    --muted: 235 7% 12%;
+    --muted-foreground: 235 5% 65%;
+    --accent: 235 7% 15%;
+    --accent-foreground: 0 0% 93%;
+    --destructive: 0 63% 34%;
+    --destructive-foreground: 0 0% 93%;
+    --border: 235 7% 15%;
+    --input: 235 7% 12%;
+    --ring: 235 5% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  /* Prevent content from overflowing */
+  div,
+  main,
+  section,
+  article,
+  header,
+  footer,
+  aside {
+    max-width: 100%;
+  }
+}
+
+/* CSS Grid lines effect for dystopian feel */
+.grid-lines {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Background grid pattern with blocks */
+.bg-grid-pattern {
+  background-color: hsl(var(--background));
+  background-image: linear-gradient(to right, rgba(var(--primary-rgb), 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--primary-rgb), 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--muted));
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--muted-foreground));
+}
+
+/* Prose styles for blog content */
+.prose {
+  color: hsl(var(--foreground));
+  max-width: none;
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: hsl(var(--foreground));
+  scroll-margin-top: 5rem;
+}
+
+.prose h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: hsl(var(--foreground));
+  scroll-margin-top: 5rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+  line-height: 1.75;
+}
+
+.prose ul,
+.prose ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.65;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.prose blockquote {
+  border-left: 3px solid hsl(var(--primary));
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  color: hsl(var(--muted-foreground));
+}
+
+.prose code {
+  background-color: hsl(var(--muted));
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  font-size: 0.875em;
+  font-family: var(--font-jetbrains-mono);
+}
+
+.prose pre {
+  background-color: hsl(var(--muted));
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.875em;
+}
+
+.prose a {
+  color: hsl(var(--primary));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.prose a:hover {
+  color: hsl(var(--accent-foreground));
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Define RGB variables for background patterns */
+:root {
+  --primary-rgb: 60, 60, 90;
+}
+
+.dark {
+  --primary-rgb: 150, 150, 170;
+}
+
+/* Add these styles to ensure content doesn't overflow and handles mobile properly */
+
+@layer utilities {
+  /* Prevent horizontal overflow */
+  .no-horizontal-overflow {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Ensure content is contained */
+  .content-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Improve mobile responsiveness */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
